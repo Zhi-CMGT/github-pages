@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="begin-nav">
+        <div>
+            <img src="./image/logo-CLE1.png" alt="WAKE UP BUDDY">
+        </div>
+        <div>
+            <a href="index.html">home</a>
+            <a href="product.html">product omschrijving </a>
+            <a href="#">Handleiding</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </nav>
+    <header>
+        <div class="contact-intro">
+            <h1>
+                Welkom bij Wake Up Buddy!
+            </h1>
+            <p>
+                Onze innovatieve wekker maakt gebruik van geavanceerde aanraak- en druksensoren om je op een natuurlijke
+                en
+                effectieve manier wakker te maken.
+                Heb je vragen, opmerkingen of wil je meer weten over hoe Wake Up Buddy jouw ochtenden kan verbeteren?
+                Neem dan gerust contact met ons op. Ons team staat klaar om je te helpen!
+            </p>
+        </div>
+    </header>
+
+    <main class="center-container">
+        <section class="contacts-h2">
+            <h2>Contactformulier</h2>
+        </section>
+        <form>
+            <div class="name">
+                <div class="form-box">
+                    <label class="bold" for="firstname">Buddy's Voornaam</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Voornaam" required class="input-box">
+                </div>
+
+                <div class="form-box">
+                    <label class="bold" for="lastname">Buddy's Achternaam</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Achternaam" required class="input-box">
+                </div>
+            </div>
+            <div class="form-box">
+                <label class="bold" for="email">e-mailadres</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required class="input-long">
+            </div>
+            <div class="birth-city">
+                <div class="form-box">
+                    <label class="bold" for="city">Woonplaats</label>
+                    <input type="text" name="city" id="city" placeholder="Woonplaats" required class="input-box">
+                </div>
+
+                <div class="form-box">
+                    <label class="bold" for="birthdate">Buddy's B-Day</label>
+                    <input type="date" name="birthdate" id="birthdate" required class="input-box">
+                </div>
+            </div>
+            <div class="form-box">
+                <label for="send-to" class="bold" required>Onderwerp</label>
+                <select name="send-to" id="send-to">
+                    <option value="" disabled selected>Kies een onderwerp van het bericht...</option>
+                    <option>Hoe bestel ik Wake up Buddy?</option>
+                    <option>Hoelang is de levertijd?</option>
+                    <option>Zit er garantie op?</option>
+                    <option>Algemene vragen</option>
+                    <option>Algemene problemen</option>
+                </select>
+            </div>
+            <div class="form-box">
+                <label class="bold" for="question">bericht</label>
+                <textarea type="text" name="question" id="question" class="question-box" required></textarea>
+            </div>
+
+            <label class="bold" for="newspaper">Inschrijven voor nieuwsbrief? (optioneel)</label>
+            <div class="category-box">
+                <div>
+                    <input type="radio" id="Ja" name="newspaper" value="Ja">
+                    <label for="Ja">Ja</label>
+                </div>
+                <div>
+                    <input type="radio" id="Nee" name="newspaper" value="Nee">
+                    <label for="Nee">Nee</label>
+                </div>
+            </div>
+
+            <div id="voorwaarden">
+                <input type="checkbox" id="voorwaarde" name="voorwaarde" value="voorwaarde" required>
+                <label for="voorwaarde">Ik ga akkoord met de algemene voorwaarden</label>
+            </div>
+            <div class="submit-btn">
+                <button type="submit">Verzenden</button>
+            </div>
+        </form>
+
+        <footer>
+            <nav>
+                <a href="">Privacyverklaring</a>
+                <a href="">Cookiebeleid</a>
+            </nav>
+        </footer>
+    </main>
+</body>
+
+</html>

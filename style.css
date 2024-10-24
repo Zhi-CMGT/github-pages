@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    /* outline: 2px solid red; */
+}
+
+/* Chaim */
+
+/* de navigatie bar  */
+.begin-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFACD;
+    border-bottom: solid black 1px;
+    
+} 
+/* de navigatie afbeelding */
+div img{
+    height: 75px;
+    
+}
+/* class logo van de navigatie bar */
+#logo{
+    padding: 5px 20px;
+    transition: background 0.5s, filter 0.5s;
+}
+/* dit zorgt ervoor dat de navigatie bar logo een kleur krijgt als je het aanklikt  */
+#logo:hover{
+    background-color: #eeece7;
+   
+}
+/* de website linken van de navigatie bar 
+[de padding]: geeft de dikkte aan , 
+[text-decoration]: geeft de lijnen aan bij de link die heb ik op none gezet zodat je dat niet ziet.
+[color]: geeft de kleur van de link letters aan. 
+[transition] heeft de animatie, snelheid aan als je op de linken klikt.
+  */
+nav a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s, background 0.5s;
+    
+}
+/* de linken hebben een achtergrond kleur als je erop klikt het verandert naar wit  */
+a:hover{
+    background-color:#dbc074 ;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 55vh;
+    text-align: center;
+    border-bottom: solid black 1px;
+}
+
+header p {
+    font-size: 1.3rem;
+    padding: 5vw;
+    background-color: #F1FAEE;
+}
+
+ /* contact form */
+
+.contacts-h2{
+    text-align: center;
+    padding-top: 2vw;
+  }
+
+  /* contact formulier */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 1vw;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.name{
+    display: flex;
+    gap: 10px;
+}
+
+.birth-city{
+    display: flex;
+    gap: 10px;
+}
+
+.input-box{
+    width: 25vw;
+    height: 35px;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: #3a3b3c solid 1px;
+}
+.input-long{
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 5px;
+    border: #3a3b3c solid 1px;
+}
+select{
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: #3a3b3c solid 1px;
+}
+
+.category-box{
+    display: flex;
+    gap: 10px;
+}
+
+textarea{
+    padding: 10px;
+    border-radius: 5px;
+    height: 100px;
+    border: #3a3b3c solid 1px;
+}
+
+#voorwaarden{
+    margin: 10px 0;
+}
+
+.submit-btn {
+    text-align: center;
+    padding-bottom: 2vw;
+}
+
+.submit-btn button {
+    padding: 0.5vw;
+    font-size: 1.2rem;
+}
+
+/* Zhiwen */
+
+body {
+    background-color: #E9ECEF;
+}
+
+/* header */
+
+h1 {
+    font-size: 2.5rem;
+    padding: 3vw 0 2vw 0;
+}
+
+.btn {
+    padding: 10vw 0 2vw 0;
+}
+
+.btn button {
+    font-size: 1.3rem;
+    background-color:white;
+    border-radius: 8px;
+    padding: 1vw 2vw;
+}
+
+button:hover {
+    background-color: #E9ECEF;
+}
+
+/* main */
+
+main {
+    background-color: #A8DADC;
+    width: 100%;
+    height: auto;
+}
+
+/* article */
+
+h2 {
+    font-size: 1.8rem;
+    padding: 0 0 2vw 1vw;
+}
+
+h3, h4 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.article-one {
+    display: flex;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2vw 0 1vw 2vw;
+}
+
+.text p {
+    padding-left: 1vw;
+}
+
+.article-two {
+    padding: 0 2vw;
+}
+
+.instruction {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3vw;
+    padding: 2vw 0;
+}
+
+.grid-item {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3vw;
+    background-color: #E9ECEF;
+}
+
+.article-three {
+    display: flex;
+    gap: 15vw;
+}
+
+.plus, .questions {
+    border-left: 2px solid black;
+}
+
+.plus p, .questions p {
+    padding: 0 0 1vw 1vw;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #B0A8B9;
+}
+
+footer nav {
+    font-size: 1.2rem;
+    padding: 1vw 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* media-queries */
+
+@media (max-width: 1000px) {
+
+    /* navigator */
+
+    .begin-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .begin-nav img {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1vw;
+    }
+
+    .begin-nav a {
+        font-size: 1.5rem;
+    }
+
+    /* header */
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    /* main */
+
+    .article-one {
+        flex-direction: column;
+    }
+
+    .text h2 {
+        text-align: center;
+    }
+
+    .text p {
+        padding: 0 5vw 2vw 5vw;
+    }
+
+    .article-two {
+        text-align: center;
+    }
+
+    .instruction {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5vw 5vw 2vw;
+    }
+
+    .article-three {
+        display: flex;
+        flex-direction: column;
+        gap: 7vw;
+        padding: 0 5vw 2vw 5vw;
+    }
+
+    /* footer */
+
+   footer nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer nav a {
+        font-size: 1.3rem;
+    }
+
+}
